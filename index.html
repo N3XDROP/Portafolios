@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolios</title>
+
+  <link rel="stylesheet" href="css/index-style.css">
 </head>
+
 <body>
-    
-    <header>
-      <h1>Portafolios - DevOps</h1>
-    </header>
 
-    <div id="Welcome-Description">
-        <h1>Bienvenido</h1>
+  <header>
+    <h1>Portafolios - DevOps</h1>
+  </header>
 
-        <div style="flex: 1; text-align: center">
-          <img
-            src="./assets/img/Img-prueba.png"
-            alt="Imagen de bienvenida al usuario"
-            style="width: 15%; height: auto"
-          />
-          <figcaption>Imagen de bienvenida al usuario</figcaption>
-        </div>
+  <div id="Welcome-Description">
 
-        <p>A continuacion encontrás las fichas tecnicas de los alumnos asociados al grupo de DevOps</p>
+    <div class="uni-logo">
+      <img src="./assets/img/LogoU-1.png" alt="Logo Universidad" class="uni-img" />
+      <figcaption>Universidad</figcaption>
     </div>
 
-    <div id="Partners-Cards">
-        <ul>
-            <li><a href="pages/Julian.html">Julian F. Peralta B.</a></li>
-            <li><a href="pages/Jose.html">Jose L. Torres R.</a></li>
-            <li><a href="pages/Camila.html">Maria C. Lopez B.</a></li>
-        </ul>
-    </div>
+    <p>Este portafolio reúne las fichas técnicas de los integrantes del grupo de DevOps. Aquí encontrarás información
+      general de cada estudiante, sus intereses y una breve presentación personal.
+      La actividad busca fortalecer el trabajo en equipo, la organización y la documentación, cualidades clave dentro
+      del mundo de la tecnología y el desarrollo colaborativo.</p>
+      
+  </div>
+
+
+  <div id="Partners-Cards">
+    <ul>
+      <li class="card" onclick="location.href='pages/Julian.html'">
+        <img src="./assets/img/Julian.jpg" alt="Foto de Julian" class="card-img">
+        <h3>Julian F. Peralta B.</h3>
+        <p>Mi nombre es Julian, vivo en la gran y hermosa Duitama-Boyacá; Siempre dispuesto a mejorar de la mano de mis
+          amigos y seres queridos, persevero hasta que alcanzo cuando me propongo algo. Siempre dispuesto a ayudar.</p>
+      </li>
+
+      <li class="card" onclick="location.href='pages/Jose.html'">
+        <img src="./assets/img/Jose.jpg" alt="Foto de Jose" class="card-img">
+        <h3>Jose L. Torres R.</h3>
+        <p></p>
+      </li>
+
+      <li class="card" onclick="location.href='pages/Camila.html'">
+        <img src="./assets/img/Camila.jpg" alt="Foto de Camila" class="card-img">
+        <h3>Maria C. Lopez B.</h3>
+        <p></p>
+      </li>
+    </ul>
+  </div>
 
 </body>
+
 </html>

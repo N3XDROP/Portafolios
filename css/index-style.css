@@ -1,0 +1,95 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #222;
+}
+
+#Welcome-Description p {
+  max-width: 60%;
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.uni-logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.uni-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.uni-logo figcaption {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+#Partners-Cards ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #ececec;
+}
+
+.card-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #ddd;
+  transition: border 0.3s ease;
+}
+
+.card:hover .card-img {
+  border-color: #2ecc71; /* verde */
+  /*border-color: #4e73df; /* AZUL */
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  text-align: justify;
+  padding: 0 5px;
+}
