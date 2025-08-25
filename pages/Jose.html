@@ -2,39 +2,139 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FT - José Luis Torres</title>
-    <link rel="stylesheet" href="/css/fichas.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoja de Vida — José Luis Torres</title>
+    <meta name="description" content="CV creativo y moderno de José Luis Torres Rivera" />
+    <link rel="stylesheet" href="/css/fichas.css" />
 </head>
 
 <body>
-    <div class="card">
-        <div class="profile-img">
+    <div class="wrap">
+        <header class="hero">
+            <div class="id">
 
-            <img src="/assets/img/Jose.jpeg" alt="Foto de José Luis Torres">
+                <div class="avatar">
+                    <img src="/assets/img/Jose.jpeg" alt="Foto de perfil de José Luis Torres">
+                </div>
 
-        </div>
+                <div>
+                    <h1>José Luis Torres Rivera</h1>
+                    <p class="sub">Tunja – Boyacá, Colombia ·
+                        <a href="mailto:torresriverajoseluis9@gmail.com">Correo</a> ·
+                        <a href="tel:+573105979131">Teléfono</a> ·
+                        <a href="https://github.com/JoseLuis241204">GitHub</a> ·
+                        <a href="http://www.linkedin.com/in/joseluis-torresrivera">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="btn" onclick="window.location.href='/index.html'">⬅️ Volver</button>
+                <button class="btn" id="themeToggle" title="Cambiar tema">🌓 Tema</button>
+                <button class="btn primary" onclick="window.print()">⬇️ Descargar PDF</button>
+            </div>
+        </header>
 
-        <div class="info">
-            <h1>José Luis Torres Rivera</h1>
-            <h2>Estudiante de Ingeniería de Sistemas</h2>
+        <div class="grid">
+            <!-- Columna principal -->
+            <main class="stack">
+                <section class="card">
+                    <h2>Perfil</h2>
+                    <p>Soy un estudiante apasionado por la <strong>tecnología</strong> y el <strong>desarrollo de
+                            software</strong>. Me motiva construir soluciones prácticas que integren backend y frontend
+                        con un enfoque en <strong>seguridad</strong>, <strong>escalabilidad</strong> y
+                        <strong>buenas prácticas</strong>. He trabajado en proyectos como sistemas de votación,
+                        aplicaciones de gimnasio y plataformas de gestión política. Fuera del ámbito académico, disfruto
+                        el <strong>motociclismo en circuito</strong>, crear contenido relacionado al motor para mis
+                        redes sociales y seguir aprendiendo nuevas tecnologías.
+                    </p>
+                </section>
 
-            <p><strong>Programa:</strong> Ingeniería de Sistemas - FIS USTA Tunja</p>
-            <p><strong>Edad:</strong> 20 años</p>
-            <p><strong>Lenguajes:</strong> JavaScript, TypeScript, Python, SQL. Experiencia con Flask, React, Express y Bases de datos.</p>
-            <p><strong>Intereses:</strong> Desarrollo web fullstack, arquitectura de software, bases de datos, diseño web y el motociclismo.</p>
-            <p><strong>Habilidades:</strong> Desarrollo backend y frontend, diseño de bases de datos, liderazgo de proyectos, análisis de sistemas, aprendizaje autónomo.</p>
-            <p><strong>Descripción:</strong> Soy un estudiante apasionado por la tecnología y el desarrollo de software. 
-                Me motiva construir soluciones prácticas que integren backend y frontend con un enfoque en seguridad, escalabilidad y buenas prácticas. 
-                He trabajado en proyectos como sistemas de votación, aplicaciones de gimnasio y plataformas de gestión política. 
-                Fuera del ámbito académico, disfruto el motociclismo en circuito, crear contenido relacionado al motor para mis redes sociales y seguir aprendiendo nuevas tecnologías.</p>
-        </div>
+                <br />
 
-        <div class="back-btn">
-            <a href="/index.html">⬅ Regresar</a>
+                <section class="card">
+                    <h2>Formación</h2>
+                    <div class="timeline list">
+                        <div class="timeline-item">
+                            <strong>Ingeniería de Sistemas</strong> — Pregrado — <em>En curso</em><br />
+                            <span class="sub">Universidad: <em><a
+                                        href="https://www.santototunja.edu.co/nuestra-institucion/presentacion-usta-tunja">
+                                        Santo Tomás Seccional Tunja</a></em> · Modalidad: Presencial</span>
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Habilidades Técnicas</h2>
+                    <div class="chips">
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">Flask</span>
+                        <span class="chip">React</span>
+                        <span class="chip">Express</span>
+                        <span class="chip">Bases de datos</span>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Fortalezas</h2>
+                    <ul class="list">
+                        <li>Desarrollo backend y frontend.</li>
+                        <li>Diseño de bases de datos.</li>
+                        <li>Liderazgo de proyectos.</li>
+                        <li>Análisis de sistemas.</li>
+                        <li>Aprendizaje autónomo.</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Columna lateral -->
+            <aside class="stack">
+                <section class="card">
+                    <h2>Intereses</h2>
+                    <ul class="list">
+                        <li>Desarrollo web fullstack.</li>
+                        <li>Arquitectura de software.</li>
+                        <li>Bases de datos.</li>
+                        <li>Diseño web.</li>
+                        <li>Motociclismo.</li>
+                    </ul>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Contacto Rápido</h2>
+                    <div class="cols">
+                        <a class="btn" href="mailto:torresriverajoseluis9@gmail.com">Correo</a>
+                        <a class="btn" href="tel:+573105979131">Teléfono</a>
+                    </div>
+                </section>
+            </aside>
         </div>
     </div>
+
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+        const saved = localStorage.getItem('cv-theme');
+        if (saved) {
+            if (saved === 'light') root.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            root.setAttribute('data-theme', 'light');
+        }
+        toggle.addEventListener('click', () => {
+            const isLight = root.getAttribute('data-theme') === 'light';
+            root.setAttribute('data-theme', isLight ? 'dark' : 'light');
+            localStorage.setItem('cv-theme', isLight ? 'dark' : 'light');
+        });
+    </script>
 </body>
 
 </html>
