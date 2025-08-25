@@ -98,8 +98,8 @@ header.hero {
 }
 
 .avatar img {
-  width: 100%;
-  height: 100%;
+  width: 105%;
+  height: 105%;
   object-fit: cover;
   border-radius: 12px; /* esquinas redondeadas */
   border: 2px solid #e0e0e0; /* borde suave gris claro */
