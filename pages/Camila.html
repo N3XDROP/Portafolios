@@ -2,36 +2,170 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FT - Camila Lopez</title>
-    <link rel="stylesheet" href="/css/fichas.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoja de Vida — Camila Lopez</title>
+    <meta name="description" content="CV creativo y moderno de Camila Lopez Bernal" />
+    <link rel="stylesheet" href="/css/fichas.css" />
 </head>
 
 <body>
-    <div class="card">
-        <div class="profile-img">
-            <img src="/assets/img/Camila2.jpg" alt="Foto de Camila Lopez">
-        </div>
+    <div class="wrap">
+        <header class="hero">
+            <div class="id">
+                <div class="avatar">
+                    <img src="/assets/img/Camila.jpg" alt="Foto de perfil de Camila Lopez">
+                </div>
+                <div>
+                    <h1>Camila Lopez Bernal</h1>
+                    <p class="sub">
+                        Paipa – Boyacá, Colombia ·
+                        <a href="mailto:camilamlb18@gmaiil.com">Correo</a> ·
+                        <a href="tel:+573233378754">Teléfono</a> ·
+                        <a href="https://github.com/camilaLopezb">GitHub</a> ·
+                        <a href="http://www.linkedin.com/in/maria-camila-lopez-bernal">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="btn" onclick="window.location.href='/index.html'">⬅️ Volver</button>
+                <button class="btn" id="themeToggle" title="Cambiar tema">🌓 Tema</button>
+                <button class="btn primary" onclick="window.print()">⬇️ Descargar PDF</button>
+            </div>
+        </header>
 
-        <div class="info">
-            <h1>Camila Lopez</h1>
-            <h2>Estudiante de Ingeniería de Sistemas</h2>
+        <div class="grid">
+            <!-- Columna principal -->
+            <main class="stack">
+                <section class="card">
+                    <h2>Perfil</h2>
+                    <p>Soy una estudiante que ama aprender cosas nuevas, los retos desafiantes y la resolución de
+                        problemas.</p>
+                </section>
 
-            <p><strong>Programa:</strong> Ingeniería de Sistemas</p>
-            <p><strong>Edad:</strong> 20 años</p>
-            <p><strong>Lenguajes:</strong> Java, JavaScript, SQL, Python.</p>
-            <p><strong>Intereses:</strong> Ciberseguridad, bases de datos y Cloud computing</p>
-            <p><strong>Habilidades:</strong> Análisis, trabajo en equipo</p>
-            <p><strong>Descripción:</strong> Soy una estudiante que ama aprender cosas nuevas,
-            los retos desafiantes y la resolución de problemas. En mis tiempos libres me encanta
-        leer, conectar con la naturaleza y estar en ambientes tranquilos. </p>
-        </div>
+                <br />
 
-        <div class="back-btn">
-            <a href="/index.html">⬅ Regresar</a>
+                <section class="card">
+                    <h2>Formación</h2>
+                    <div class="timeline list">
+                        <div class="timeline-item">
+                            <strong>Ingeniería de Sistemas</strong> — Pregrado — <em>En curso</em><br />
+                            <span class="sub">Universidad: <em><a
+                                        href="https://www.santototunja.edu.co/nuestra-institucion/presentacion-usta-tunja">Santo
+                                        Tomás Seccional Tunja</a></em> · Modalidad: Presencial · Método
+                                de grado: Semillero (Investigación de Seguridad Informática)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Planes de Doble Titulación</strong><br />
+                            <span class="sub">Ingeniería <em>Electrónica</em></em>.</span>
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Proyectos</h2>
+                    <div class="list">
+                        <div>
+                            <strong>Gestión de Inventarios</strong>
+                            <p class="sub">Desarrollo de un sistema académico para controlar productos, existencias y
+                                reportes. Énfasis en modelado de datos y CRUD eficientes.</p>
+                        </div>
+                        <div>
+                            <strong>Clúster con IA para Registro y Documentos</strong>
+                            <p class="sub">Proyecto de Hackathon: plataforma para registro de usuarios y manejo
+                                inteligente de documentos con apoyo de IA.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Habilidades Técnicas</h2>
+                    <div class="chips">
+                        <span class="chip">Variedad de Lenguajes de Programación</span>
+                        <span class="chip">Bases de Datos & SQL</span>
+                        <span class="chip">Análisis de Datos</span>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Fortalezas Diferenciales</h2>
+                    <ul class="list">
+                        <li><strong>Perfeccionismo</strong> en la calidad de los resultados.</li>
+                        <li><strong>Autonomía</strong> para trabajar de manera individual y avanzar sin supervisión
+                            constante.</li>
+                        <li><strong>Liderazgo</strong> asumido de forma natural en la mayoría de proyectos en los que
+                            participa.</li>
+                    </ul>
+                </section>
+            </main>
+
+
+            <!-- Columna lateral -->
+            <aside class="stack">
+                <section class="card">
+                    <h2>Habilidades Blandas</h2>
+                    <div class="chips">
+                        <span class="chip">Liderazgo</span>
+                        <span class="chip">Creatividad</span>
+                        <span class="chip">Autogestión</span>
+                        <span class="chip">Trabajo en Equipo</span>
+                        <span class="chip">Adaptabilidad</span>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Pasatiempos & Intereses</h2>
+                    <ul class="list">
+                        <li>Me encanta la lectura</li>
+                        <li>Conectar con la naturaleza, de forma individual.</li>
+                        <li>Música y series para alimentar la creatividad.</li>
+                    </ul>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Aspiraciones</h2>
+                    <p>En 5–10 años: Ser feliz con lo que consiga, mientras no me pierda a mí todo estará bien.
+                    </p>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Contacto Rápido</h2>
+                    <div class="cols">
+                        <a class="btn" href="mailto:camilamlb18@gmaiil.com">Correo</a>
+                        <a class="btn" href="tel:+573233378754">Teléfono</a>
+                    </div>
+                </section>
+            </aside>
         </div>
     </div>
+
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+        const saved = localStorage.getItem('cv-theme');
+        if (saved) {
+            if (saved === 'light') root.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            root.setAttribute('data-theme', 'light');
+        }
+        toggle.addEventListener('click', () => {
+            const isLight = root.getAttribute('data-theme') === 'light';
+            root.setAttribute('data-theme', isLight ? 'dark' : 'light');
+            localStorage.setItem('cv-theme', isLight ? 'dark' : 'light');
+        });
+    </script>
 </body>
 
 </html>

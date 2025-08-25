@@ -2,42 +2,186 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FT - Julian Peralta</title>
-    <link rel="stylesheet" href="/css/fichas.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoja de Vida — Julian Felipe Peralta</title>
+    <meta name="description" content="CV creativo y moderno de Julian Felipe Peralta Becerra" />
+    <link rel="stylesheet" href="/css/fichas.css" />
 </head>
 
 <body>
-    <div class="card">
-        <div class="profile-img">
-            <img src="/assets/img/Julian.jpg" alt="Foto de Julian Peralta">
-        </div>
+    <div class="wrap">
+        <header class="hero">
+            <div class="id">
 
-        <div class="info">
-            <h1>Julian Peralta</h1>
-            <h2>Estudiante de Ingeniería de Sistemas</h2>
+                <div class="avatar">
+                    <img src="/assets/img/Julian.jpg" alt="Foto de perfil de Julian Felipe Peralta">
+                </div>
 
-            <p><strong>Programa:</strong> Ingeniería de Sistemas - FIS USTA Tunja</p>
-            <p><strong>Edad:</strong> 21 años</p>
-            <p><strong>Lenguajes:</strong> Java, JavaScript, SQL, Python. Conocimientos generales en Assembler, C/C++ y
-                PHP.</p>
-            <p><strong>Intereses:</strong> Desarrollo web, ciberseguridad, videojuegos, DevOps.</p>
-            <p><strong>Habilidades:</strong> Organización, análisis, liderazgo en proyectos cuando se requiere, trabajo
-                independiente.</p>
-            <p><strong>Descripción:</strong> Soy un estudiante apasionado por la tecnología y el aprendizaje constante.
-                Me destaco por mi organización y pensamiento analítico, lo que me permite abordar proyectos con
-                precisión
-                y atención al detalle. Me interesa especialmente el desarrollo web y la ciberseguridad, aunque también
-                disfruto explorar el mundo de los videojuegos y su programación.
-                Fuera del ámbito académico me gustan los videojuegos, la composición musical, el dibujo, y el deporte,
-                en especial el fútbol, la natación y el ciclismo.</p>
-        </div>
+                <div>
+                    <h1>Julian Felipe Peralta Becerra</h1>
+                    <p class="sub">Duitama – Boyacá, Colombia ·
+                        <a href="mailto:julian.peraltac@gmail.com">Correo</a> ·
+                        <a href="tel:+573228971115">Teléfono</a> ·
+                        <a href="https://github.com/N3XDROP">GitHub</a>
+                    </p>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="btn" onclick="window.location.href='/index.html'">⬅️ Volver</button>
+                <button class="btn" id="themeToggle" title="Cambiar tema">🌓 Tema</button>
+                <button class="btn primary" onclick="window.print()">⬇️ Descargar PDF</button>
+            </div>
 
-        <div class="back-btn">
-            <a href="/index.html">⬅ Regresar</a>
+        </header>
+
+        <div class="grid">
+            <!-- Columna principal -->
+            <main class="stack">
+                <section class="card">
+                    <h2>Perfil</h2>
+                    <p>Estudiante de <strong>Ingeniería de Sistemas</strong> con interés en <strong>desarrollo
+                            web</strong>, <strong>programación de videojuegos</strong> y <strong>análisis de
+                            datos</strong>. Me motiva enfrentar retos reales, crear productos útiles y estéticamente
+                        cuidados, y combinar lo técnico con lo creativo. A corto y mediano plazo deseo profundizar en
+                        <strong>videojuegos</strong>, <strong>bases de datos</strong> y <strong>ciberseguridad</strong>.
+                    </p>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Formación</h2>
+                    <div class="timeline list">
+                        <div class="timeline-item">
+                            <strong>Ingeniería de Sistemas</strong> — Pregrado — <em>En curso</em><br />
+                            <span class="sub">Universidad: <em><a
+                                        href="https://www.santototunja.edu.co/nuestra-institucion/presentacion-usta-tunja">Santo
+                                        Tomás Seccional Tunja</a></em> · Modalidad: Presencial · Método
+                                de grado: Especialización (orientada a desarrollo web o videojuegos)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Planes de posgrado</strong><br />
+                            <span class="sub">Enfocados en <em>programación de videojuegos</em> y <em>desarrollo web
+                                    avanzado</em>.</span>
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Proyectos</h2>
+                    <div class="list">
+                        <div>
+                            <strong>Gestión de Inventarios</strong>
+                            <p class="sub">Desarrollo de un sistema académico para controlar productos, existencias y
+                                reportes. Énfasis en modelado de datos y CRUD eficientes.</p>
+                        </div>
+                        <div>
+                            <strong>Clúster con IA para Registro y Documentos</strong>
+                            <p class="sub">Proyecto de Hackathon: plataforma para registro de usuarios y manejo
+                                inteligente de documentos con apoyo de IA.</p>
+                        </div>
+                        <div>
+                            <strong>Mods & Juegos Indie (en curso)</strong>
+                            <p class="sub">Exploración y creación de <em>mods</em> para <em>Minecraft</em> y <em>Friday
+                                    Night Funkin'</em> como puerta de entrada al desarrollo de videojuegos.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Habilidades Técnicas</h2>
+                    <div class="chips">
+                        <span class="chip">Desarrollo Web (Front/Back)</span>
+                        <span class="chip">Bases de Datos & SQL</span>
+                        <span class="chip">POO</span>
+                        <span class="chip">Análisis de Datos</span>
+                        <span class="chip">Mods / Juegos Indie</span>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Fortalezas Diferenciales</h2>
+                    <ul class="list">
+                        <li>Fusión de <strong>creatividad</strong> y <strong>rigurosidad técnica</strong> en productos
+                            reales.</li>
+                        <li>Orientación a <strong>impacto práctico</strong> y solución de problemas concretos.</li>
+                        <li><strong>Autonomía</strong> para avanzar solo y <strong>liderazgo</strong> situacional en
+                            equipos conocidos.</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Columna lateral -->
+            <aside class="stack">
+                <section class="card">
+                    <h2>Habilidades Blandas</h2>
+                    <div class="chips">
+                        <span class="chip">Liderazgo</span>
+                        <span class="chip">Creatividad</span>
+                        <span class="chip">Autogestión</span>
+                        <span class="chip">Trabajo en Equipo</span>
+                        <span class="chip">Adaptabilidad</span>
+                    </div>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Pasatiempos & Intereses</h2>
+                    <ul class="list">
+                        <li>Videojuegos, <em>mods</em> y diseño de mecánicas.</li>
+                        <li>Ejercicio con familia y amigos.</li>
+                        <li>Música y series para alimentar la creatividad.</li>
+                        <li>Conocer gente y nuevas ideas.</li>
+                    </ul>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Aspiraciones</h2>
+                    <p>En 5–10 años: mantener y crear <strong>sitios web</strong> y <strong>aplicaciones</strong> para
+                        negocios y proyectos propios; desarrollar <strong>videojuegos</strong> y contenidos interactivos
+                        con sello personal; y liderar iniciativas en <strong>bases de datos</strong> o
+                        <strong>ciberseguridad</strong> con enfoque humano y sostenible.
+                    </p>
+                </section>
+
+                <br />
+
+                <section class="card">
+                    <h2>Contacto Rápido</h2>
+                    <div class="cols">
+                        <a class="btn" href="mailto:julian.peraltac@gmail.com">Correo</a>
+                        <a class="btn" href="tel:+573228971115">Teléfono</a>
+                    </div>
+                </section>
+            </aside>
         </div>
     </div>
+
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+        const saved = localStorage.getItem('cv-theme');
+        if (saved) {
+            if (saved === 'light') root.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            root.setAttribute('data-theme', 'light');
+        }
+        toggle.addEventListener('click', () => {
+            const isLight = root.getAttribute('data-theme') === 'light';
+            root.setAttribute('data-theme', isLight ? 'dark' : 'light');
+            localStorage.setItem('cv-theme', isLight ? 'dark' : 'light');
+        });
+    </script>
 </body>
 
 </html>
