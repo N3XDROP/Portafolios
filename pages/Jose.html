@@ -15,15 +15,21 @@
             <div class="id">
 
                 <div class="avatar">
-                    <img src="../assets/img/Jose.jpeg" alt="Foto de perfil de José Luis Torres">
+                    <img id="avatarImg" src="../assets/img/Jose.jpeg" alt="Foto de perfil de José Luis Torres">
+                </div>
+
+                <!-- Popup -->
+                <div class="popup" id="popup">
+                    <span id="closeBtn">&times;</span>
+                    <img id="popupImg" alt="Foto ampliada" />
                 </div>
 
                 <div>
                     <h1>José Luis Torres Rivera</h1>
                     <p class="sub">Tunja – Boyacá, Colombia ·
-                        <a href="mailto:torresriverajoseluis9@gmail.com">Correo</a> ·
-                        <a href="tel:+573105979131">Teléfono</a> ·
-                        <a href="https://github.com/JoseLuis241204">GitHub</a> ·
+                        <a href="mailto:torresriverajoseluis9@gmail.com">torresriverajoseluis9@gmail.com</a> ·
+                        <a href="tel:+573105979131">+573105979131</a> ·
+                        <a href="https://github.com/JoseLuis241204">GitHub: JoseLuis241204</a> ·
                         <a href="http://www.linkedin.com/in/joseluis-torresrivera">LinkedIn</a>
                     </p>
                 </div>
@@ -120,7 +126,10 @@
         </div>
     </div>
 
+    </br>
+
     <script>
+        // Cambio de Tema
         const toggle = document.getElementById('themeToggle');
         const root = document.documentElement;
         const saved = localStorage.getItem('cv-theme');
@@ -133,6 +142,27 @@
             const isLight = root.getAttribute('data-theme') === 'light';
             root.setAttribute('data-theme', isLight ? 'dark' : 'light');
             localStorage.setItem('cv-theme', isLight ? 'dark' : 'light');
+        });
+
+        // Imagen ampliada
+        const avatarImg = document.getElementById("avatarImg");
+        const popup = document.getElementById("popup");
+        const popupImg = document.getElementById("popupImg");
+        const closeBtn = document.getElementById("closeBtn");
+
+        avatarImg.addEventListener("click", () => {
+            popup.style.display = "flex";
+            popupImg.src = avatarImg.src; // usa la misma imagen del avatar
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
         });
     </script>
 </body>

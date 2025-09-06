@@ -15,15 +15,21 @@
             <div class="id">
 
                 <div class="avatar">
-                    <img src="../assets/img/Julian.jpg" alt="Foto de perfil de Julian Felipe Peralta">
+                    <img id="avatarImg" src="../assets/img/Julian.jpg" alt="Foto de perfil de Julian Felipe Peralta">
+                </div>
+
+                <!-- Popup -->
+                <div class="popup" id="popup">
+                    <span id="closeBtn">&times;</span>
+                    <img id="popupImg" alt="Foto ampliada" />
                 </div>
 
                 <div>
                     <h1>Julian Felipe Peralta Becerra</h1>
                     <p class="sub">Duitama – Boyacá, Colombia ·
-                        <a href="mailto:julian.peraltac@gmail.com">Correo</a> ·
-                        <a href="tel:+573228971115">Teléfono</a> ·
-                        <a href="https://github.com/N3XDROP">GitHub</a>
+                        <a href="mailto:julian.peraltac@gmail.com">julian.peraltac@gmail.com</a> ·
+                        <a href="tel:+573228971115">+573228971115</a> ·
+                        <a href="https://github.com/N3XDROP">GitHub: N3XDROP</a>
                     </p>
                 </div>
             </div>
@@ -167,7 +173,10 @@
         </div>
     </div>
 
+    </br>
+
     <script>
+        // Cambio de Tema
         const toggle = document.getElementById('themeToggle');
         const root = document.documentElement;
         const saved = localStorage.getItem('cv-theme');
@@ -180,6 +189,27 @@
             const isLight = root.getAttribute('data-theme') === 'light';
             root.setAttribute('data-theme', isLight ? 'dark' : 'light');
             localStorage.setItem('cv-theme', isLight ? 'dark' : 'light');
+        });
+
+        // Imagen ampliada
+        const avatarImg = document.getElementById("avatarImg");
+        const popup = document.getElementById("popup");
+        const popupImg = document.getElementById("popupImg");
+        const closeBtn = document.getElementById("closeBtn");
+
+        avatarImg.addEventListener("click", () => {
+            popup.style.display = "flex";
+            popupImg.src = avatarImg.src; // usa la misma imagen del avatar
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
         });
     </script>
 </body>
